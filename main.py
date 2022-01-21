@@ -4,6 +4,7 @@ from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
 from kivy.uix.image import Image
 
+
 class MainApp(App):
     def build(self):
         self.operators = ["/", "*", "+", "-"]
@@ -43,11 +44,10 @@ class MainApp(App):
         equals_button.bind(on_press=self.on_solution)
         main_layout.add_widget(equals_button)
 
-       # img = Image(source=r'C:\Users\Dell\Downloads\lottery image.jpg',size_hint=(1, .5), pos_hint={'center_x': .5, 'center_y': .5})
-        
+        # img = Image(source=r'C:\Users\Dell\Downloads\lottery image.jpg',size_hint=(1, .5), pos_hint={'center_x': .5, 'center_y': .5})
+
         #return img
         return main_layout
-
 
     def on_button_press(self, instance):
         current = self.solution.text
